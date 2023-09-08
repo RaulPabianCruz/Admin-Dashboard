@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    height: 100vh;
+    background-color: antiquewhite;
+}
