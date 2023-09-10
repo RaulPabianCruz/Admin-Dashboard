@@ -6,7 +6,8 @@
 :root {
     height: 100vh;
     font-size: 16px;
-    --cyan-color: #7dd3fc;
+    --blue-color: #0ea5e9;
+    --blue-color-hover: #38bdf8;
     --white-color: #f9fafb;
     --light-gray-color: #e4e4e7;
 }
@@ -58,8 +59,11 @@ input[type="image"] {
     grid-row: 2;
 }
 
+/*Sidebar Styling */
+
 .sidebar {
-    background-color: var(--cyan-color);
+    background-color: var(--blue-color);
+    padding-top: 15px;
     grid-column: 1;
     grid-row: 1 / 3;
 }
@@ -67,8 +71,52 @@ input[type="image"] {
 .sidebar-content {
     height: 60%;
     display: grid;
-    grid-template-rows: 2fr repeat(11, 1fr);
+    grid-template-rows: 2fr repeat(10, 1fr);
 }
+
+.sidebar-option:nth-last-child(3) {
+    grid-row: 9;
+}
+
+.sidebar-option:nth-last-child(2) {
+    grid-row: 10;
+}
+
+.sidebar-option:last-child {
+    grid-row: 11;
+}
+
+.sidebar-title >
+.sidebar-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.sidebar-option > 
+.sidebar-text {
+    font-size: 1.2rem;
+}
+
+.sidebar-title,
+.sidebar-option {
+    display: flex;
+}
+
+.sidebar-option:hover {
+    background-color: var(--blue-color-hover);
+}
+
+.sidebar-icon {
+    flex: 1 1 0;
+}
+
+.sidebar-text {
+    flex: 3 1 0;
+    font-weight: bold;
+    color: white;
+}
+
+/*Main content area styling*/
 
 .main {
     background-color: var(--light-gray-color);
