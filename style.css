@@ -10,6 +10,7 @@
     --blue-color-hover: #38bdf8;
     --white-color: #f9fafb;
     --light-gray-color: #e2e8f0;
+    --dark-gray-color: #cbd5e1;
 }
 
 body {
@@ -41,13 +42,19 @@ input[type="image"] {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
+    row-gap: 5px;
 }
-/*Header Styling*/
 
+/*--------Header Styling---------*/
+/*-------------------------------*/
 .header {
     background-color: var(--white-color);
+    padding-bottom: 15px;
+    padding-right: 15px;
+    box-shadow: 0 5px 3px var(--dark-gray-color);
     display: grid;
     grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
     grid-column: 2;
     grid-row: 1;
 }
@@ -91,7 +98,51 @@ input[type="image"] {
 .header-bottom {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    column-gap: 10px;
     grid-row: 2;
+}
+
+.header-bottom > .profile-img {
+    justify-self: end;
+}
+
+.greeting {
+    padding-left: 10px;
+}
+
+.greeting p {
+    font-size: .9rem;
+}
+
+.greeting h1 {
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: var(--blue-color);
+    color: white;
+    width: 80%;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 25px;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--blue-color-hover);
+}
+
+.new-bttn {
+    justify-self: end;
+}
+
+.upload-bttn {
+    justify-self: center;
+}
+
+.share-bttn {
+    justify-self: start;
 }
 
 .header-item {
