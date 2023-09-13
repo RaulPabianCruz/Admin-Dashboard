@@ -257,14 +257,12 @@ button:hover {
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-auto-rows: 250px;
     gap: 20px;
     grid-column: 1;
     grid-row: 2 / 5;
 }
 
 .card {
-    max-height: 250px;
     box-sizing: border-box;
     padding: 25px 20px;
     border-left: 7px solid rgb(255, 196, 0);
